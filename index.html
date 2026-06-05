@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaibhav Saini — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="logo">VS<span>.</span></div>
+    <ul class="navlist" id="navmenu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certs">Achievements</a></li>
+      <li><a href="#notes">Notes</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="navr">
+      <a href="My_Resume.pdf" download class="nav-cv">CV <i class="fas fa-download"></i></a>
+      <button class="ham" onclick="toggleNav()">&#9776;</button>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-bg-grid"></div>
+
+    <div class="hero-inner">
+      <!-- LEFT: code block intro -->
+      <div class="hero-left">
+        <div class="code-block">
+          <div class="code-bar">
+            <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+            <span class="code-filename">vaibhav.js</span>
+          </div>
+          <div class="code-body">
+            <div class="code-line"><span class="ln">1</span><span class="cm">// Hello, World 👋</span></div>
+            <div class="code-line"><span class="ln">2</span><span class="kw">const</span> <span class="va">developer</span> <span class="op">=</span> <span class="br">{</span></div>
+            <div class="code-line"><span class="ln">3</span>&nbsp;&nbsp;<span class="pr">name</span><span class="op">:</span> <span class="st">"Vaibhav Saini"</span><span class="op">,</span></div>
+            <div class="code-line"><span class="ln">4</span>&nbsp;&nbsp;<span class="pr">role</span><span class="op">:</span> <span class="st">"<span id="typer"></span><span class="cur">|</span>"</span><span class="op">,</span></div>
+            <div class="code-line"><span class="ln">5</span>&nbsp;&nbsp;<span class="pr">uni</span><span class="op">:</span> <span class="st">"MBM University"</span><span class="op">,</span></div>
+            <div class="code-line"><span class="ln">6</span>&nbsp;&nbsp;<span class="pr">cgpa</span><span class="op">:</span> <span class="nm">8.30</span><span class="op">,</span></div>
+            <div class="code-line"><span class="ln">7</span>&nbsp;&nbsp;<span class="pr">batch</span><span class="op">:</span> <span class="st">"2024–2028"</span><span class="op">,</span></div>
+            <div class="code-line"><span class="ln">8</span>&nbsp;&nbsp;<span class="pr">leetcode</span><span class="op">:</span> <span class="st">"100+ solved"</span><span class="op">,</span></div>
+            <div class="code-line"><span class="ln">9</span>&nbsp;&nbsp;<span class="pr">openTo</span><span class="op">:</span> <span class="br">[</span><span class="st">"internships"</span><span class="op">,</span> <span class="st">"collabs"</span><span class="br">]</span></div>
+            <div class="code-line"><span class="ln">10</span><span class="br">}</span><span class="op">;</span></div>
+            <div class="code-line code-gap"><span class="ln">11</span></div>
+            <div class="code-line"><span class="ln">12</span><span class="fn">console</span><span class="op">.</span><span class="fn">log</span><span class="br">(</span><span class="va">developer</span><span class="op">.</span><span class="pr">name</span><span class="br">)</span><span class="op">;</span></div>
+            <div class="code-output"><span class="arrow">▶</span> <span class="out-text">Vaibhav Saini</span></div>
+          </div>
+        </div>
+
+        <div class="hero-cta-row">
+          <a href="#contact" class="btn-dev primary-dev">
+            <i class="fas fa-terminal"></i> Let's Talk
+          </a>
+          <a href="My_Resume.pdf" download class="btn-dev ghost-dev">
+            <i class="fas fa-file-code"></i> Resume.pdf
+          </a>
+          <a href="https://github.com/Vaibhavsaini14" target="_blank" class="btn-dev icon-dev">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/vaibhavsaini14" target="_blank" class="btn-dev icon-dev">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: photo + stat chips -->
+      <div class="hero-right">
+        <div class="photo-wrap">
+          <img src="My Pic.jpg" alt="Vaibhav Saini" class="hero-photo" />
+          <div class="stat-chip chip-lc">
+            <i class="fas fa-code"></i>
+            <div><strong>100+</strong><small>LeetCode</small></div>
+          </div>
+          <div class="stat-chip chip-gpa">
+            <i class="fas fa-star"></i>
+            <div><strong>8.30</strong><small>CGPA</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="sec">
+    <span class="sec-num">01</span>
+    <div class="about-wrap">
+      <h2 class="sec-h">About <em>Me</em></h2>
+      <div class="about-body">
+        <p>Second-year CSE student at MBM University who got into coding through curiosity and stayed for the problem-solving. I build frontend projects to understand how things actually work under the hood — not just to make them look good, but to make them <em>make sense</em>.</p>
+        <p>Currently doing an AI for Sustainability online internship at 1M1B while keeping up with DSA on LeetCode. I managed the Student Induction for 100 incoming students in my first month of 2nd year at university, which taught me more about communication than any coursework has. Right now I'm most interested in Data Analytics and how AI tooling is changing the way developers actually write code.</p>
+        <div class="about-tags">
+          <span>Data Analytics</span>
+          <span>DSA</span>
+          <span>Web Dev</span>
+          <span>Generative AI</span>
+          <span>Open Source</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="sec sec-alt">
+    <span class="sec-num">02</span>
+    <h2 class="sec-h">Technical <em>Skills</em></h2>
+    <div class="skills-wrap">
+      <div class="sk-group">
+        <p class="sk-label">Languages</p>
+        <div class="sk-pills">
+          <span>C</span><span>C++</span><span>Python</span><span>JavaScript</span><span>SQL</span>
+        </div>
+      </div>
+      <div class="sk-group">
+        <p class="sk-label">Web Technologies</p>
+        <div class="sk-pills">
+          <span>HTML5</span><span>CSS3</span><span>React</span><span>Tailwind</span><span>Bootstrap</span>
+        </div>
+      </div>
+      <div class="sk-group">
+        <p class="sk-label">Tools & Platforms</p>
+        <div class="sk-pills">
+          <span>Git</span><span>GitHub</span><span>VS Code</span><span>MySQL</span><span>Excel</span><span>Power BI</span>
+        </div>
+      </div>
+      <div class="sk-group">
+        <p class="sk-label">Areas of Interest</p>
+        <div class="sk-pills interest">
+          <span>Data Analytics</span><span>Algorithms</span><span>Generative AI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="sec">
+    <span class="sec-num">03</span>
+    <h2 class="sec-h">Selected <em>Projects</em></h2>
+    <div class="filter-row">
+      <button class="fbtn active" onclick="filterP(this,'all')">All</button>
+      <button class="fbtn" onclick="filterP(this,'js')">JavaScript</button>
+      <button class="fbtn" onclick="filterP(this,'css')">HTML / CSS</button>
+      <button class="fbtn" onclick="filterP(this,'ai')">AI-Assisted</button>
+    </div>
+    <div class="pgrid" id="pgrid">
+
+      <div class="pcard" data-cat="js css">
+        <div class="pcard-head">
+          <span class="ptag-feat">Featured</span>
+          <div class="pcard-date">Feb 2026</div>
+        </div>
+        <h3>Cloth Inventory Management System</h3>
+        <p>Built for real retail cloth stores — eliminates error-prone manual spreadsheets with a frontend-only app that manages stock through a centralised JS data file. No backend, no server costs, just works. Integrated into Google StudyPods so peers can use it as a live demo.</p>
+        <div class="ptech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>SQL</span></div>
+        <a class="plink" href="https://github.com/mnjangid/SP0516-Major-Project" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+      </div>
+
+      <div class="pcard" data-cat="js ai">
+        <div class="pcard-head">
+          <div class="pcard-date">Sep 2025</div>
+        </div>
+        <h3>Neural Arena</h3>
+        <p>Browser-based 3D action game — collision detection, player controls, and dynamic arena elements, all in vanilla JS. Used an AI-assisted dev workflow deliberately to see how fast a solo developer could go from idea to playable prototype. Answer: surprisingly fast.</p>
+        <div class="ptech"><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div>
+        <a class="plink" href="https://github.com/Vaibhavsaini14/Neural_Arena-3D-Game" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+      </div>
+
+      <div class="pcard" data-cat="js css">
+        <div class="pcard-head">
+          <div class="pcard-date">Jan 2026</div>
+        </div>
+        <h3>Personal Portfolio Website</h3>
+        <p>Built a personal portfolio to showcase technical projects, skills, and contact information to recruiters andcollaborators.
+        Implemented design using CSS Flexbox and Grid, and optimized assets to improve page load performance across Chrome, Firefox, and Edge.</p>
+        <div class="ptech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+        <a class="plink" href="https://github.com/Vaibhavsaini14/WebDev" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="certs" class="sec sec-alt">
+    <span class="sec-num">04</span>
+    <h2 class="sec-h">Achievements &amp; <em>Certifications</em></h2>
+    <div class="certs-grid">
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fas fa-chart-bar"></i></div>
+        <div class="cert-body">
+          <span class="cert-issuer">Physics Wallah × Microsoft</span>
+          <span class="cert-date">April 2026</span>
+          <h3>Data Analytics Certification</h3>
+          <p>Went through Excel, Power BI, and SQL with a focus on actually building dashboards — not just watching tutorials. The Power BI section clicked something for me about how raw data becomes a decision.</p>
+          <div class="cert-tags"><span>Excel</span><span>Power BI</span><span>SQL</span></div>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fas fa-terminal"></i></div>
+        <div class="cert-body">
+          <span class="cert-issuer">LeetCode &amp; HackerRank</span>
+          <span class="cert-date">2024 – Present</span>
+          <h3>100+ DSA Problems Solved</h3>
+          <p>Grinding Arrays, Strings, Linked Lists, and Greedy consistently. Not chasing a number — building the muscle memory for pattern recognition that technical interviews actually test.</p>
+          <div class="cert-tags"><span>Arrays</span><span>Linked Lists</span><span>Greedy</span><span>Strings</span></div>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fas fa-users"></i></div>
+        <div class="cert-body">
+          <span class="cert-issuer">MBM University</span>
+          <span class="cert-date">Aug 2024</span>
+          <h3>Student Induction Volunteer</h3>
+          <p>Managed scheduling and guidance for 100 incoming students in my first month at university — before I even knew the campus properly. Ended up being the best crash course in staying calm under pressure.</p>
+          <div class="cert-tags"><span>Leadership</span><span>Communication</span><span>Coordination</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="notes" class="sec">
+    <span class="sec-num">05</span>
+    <h2 class="sec-h">Quick <em>Notes</em></h2>
+    <p class="sec-sub">Saved to your browser with localStorage — persists on refresh.</p>
+    <div class="notes-wrap">
+      <div class="notes-in">
+        <textarea id="ntxt" rows="5" placeholder="Jot down ideas, goals, or reminders..."></textarea>
+        <button onclick="saveNote()">Save Note</button>
+      </div>
+      <ul id="nlist"></ul>
+    </div>
+  </section>
+
+  <section id="contact" class="sec sec-alt">
+    <span class="sec-num">06</span>
+    <h2 class="sec-h">Get in <em>Touch</em></h2>
+    <p class="sec-sub">Open to internships, collaborations, and project work.</p>
+    <div class="contact-wrap">
+      <form id="cform" onsubmit="sendMsg(event)" novalidate>
+        <div class="fg"><label>Full Name</label><input type="text" id="cname" /><span class="err" id="e1"></span></div>
+        <div class="fg"><label>Email Address</label><input type="email" id="cemail" /><span class="err" id="e2"></span></div>
+        <div class="fg"><label>Message</label><textarea id="cmsg" rows="5"></textarea><span class="err" id="e3"></span></div>
+        <button type="submit" class="btn">Send Message</button>
+        <p class="ok" id="ok"></p>
+      </form>
+      <div class="contact-info">
+        <a href="mailto:sainivaibhav1409@gmail.com" class="cinfo-row"><i class="fas fa-envelope"></i><span>sainivaibhav1409@gmail.com</span></a>
+        <a href="tel:+916375048923" class="cinfo-row"><i class="fas fa-phone"></i><span>+91 6375048923</span></a>
+        <a href="https://linkedin.com/in/vaibhavsaini14" target="_blank" class="cinfo-row"><i class="fab fa-linkedin"></i><span>linkedin.com/in/vaibhavsaini14</span></a>
+        <a href="https://github.com/Vaibhavsaini14" target="_blank" class="cinfo-row"><i class="fab fa-github"></i><span>github.com/Vaibhavsaini14</span></a>  
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <p>Designed &amp; built by <span>Vaibhav Saini</span> &nbsp;·&nbsp; &copy; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
